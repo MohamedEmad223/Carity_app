@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'feature/splash/presentation/screens/splash_screen.dart';
+
 class CharityApp extends StatelessWidget {
   const CharityApp({super.key});
 
@@ -7,7 +9,7 @@ class CharityApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Charity App',
-      home: HomePage(),
+      home: SplashScreen(),
     );
   }
 }
