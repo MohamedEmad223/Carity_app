@@ -79,8 +79,7 @@ class OnBoardingScreen extends StatelessWidget {
                               ),
                               child: Text(
                                 'Next',
-                                style: TextStyle(
-                                    fontSize: 16, fontWeight: FontWeight.w500),
+                                style: AppTextStyle.poppins16W400whiteColor,
                               ),
                             ),
                           ),

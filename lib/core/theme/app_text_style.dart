@@ -21,4 +21,10 @@ class AppTextStyle {
     fontSize: 14,
     fontWeight: FontWeight.w400,
   );
+
+  static TextStyle poppins16W400whiteColor = GoogleFonts.poppins(
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+  );
 }
