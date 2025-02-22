@@ -10,17 +10,20 @@ class OnBoardingCubit extends Cubit<OnBoardingState> {
 
   List<OnBoardingModel> onBoardingList = [
     OnBoardingModel(
-      title: AppText.onBoardingtextTitleOne,
+      titleOne: AppText.onBoardingtextTitleOneOneSpan,
+      titleTwo: AppText.onBoardingtextTitleOneTwoSpan,
       description: AppText.onBoardingtextSubtitleOne,
       image: AppImages.onBoarding1,
     ),
     OnBoardingModel(
-      title: AppText.onBoardingtextTitletwo,
+     titleOne: AppText.onBoardingtextTitletwofirstSpan,
+      titleTwo: AppText.onBoardingtextTitletwosecondSpan,
       description: AppText.onBoardingtextSubtitleTwo,
       image: AppImages.onBoarding2,
     ),
     OnBoardingModel(
-      title: AppText.onBoardingtextTitlethree,
+      titleOne: AppText.onBoardingtextTitlethreefirestSpan,
+      titleTwo: AppText.onBoardingtextTitlethreesecondSpan,
       description: AppText.onBoardingtextSubtitleThree,
       image: AppImages.onBoarding3,
     ),

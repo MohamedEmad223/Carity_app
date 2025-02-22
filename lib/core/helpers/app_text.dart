@@ -2,9 +2,12 @@ class AppText {
   AppText._();
 
   /// text of onBoarding screen
-  static const String onBoardingtextTitleOne = 'Browsing charities';
-  static const String onBoardingtextTitletwo = 'Payment Confirmation';
-  static const String onBoardingtextTitlethree = 'Donations History';
+  static const String onBoardingtextTitleOneOneSpan = 'Browsing';
+  static const String onBoardingtextTitleOneTwoSpan = 'charities';
+  static const String onBoardingtextTitletwofirstSpan = 'Payment';
+  static const String onBoardingtextTitletwosecondSpan = 'Confirmation';
+  static const String onBoardingtextTitlethreefirestSpan = 'Donations';
+  static const String onBoardingtextTitlethreesecondSpan = 'History';
   static const String onBoardingtextSubtitleOne =
       'Users can see the name and logo of\n each charity, as well as a brief summary\n of its mission. This feature makes it easy\n for users to discover new charities that\n they may be interested in supporting';
   static const String onBoardingtextSubtitleTwo =

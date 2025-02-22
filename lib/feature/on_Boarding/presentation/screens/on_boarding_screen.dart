@@ -85,12 +85,17 @@ class OnBoardingScreen extends StatelessWidget {
                                   key: ValueKey<int>(onBoarding
                                       .currentIndex), // Unique key for animation
                                   TextSpan(
-                                    text: 'Browsing ',
+                                    text: onBoarding
+                                        .onBoardingList[onBoarding.currentIndex]
+                                        .titleOne,
                                     style: AppTextStyle
                                         .poppins25W500secondaryColor,
                                     children: <TextSpan>[
                                       TextSpan(
-                                        text: 'charities',
+                                        text: onBoarding
+                                            .onBoardingList[
+                                                onBoarding.currentIndex]
+                                            .titleTwo,
                                         style: AppTextStyle
                                             .poppins25W500primaryColor,
                                       ),
