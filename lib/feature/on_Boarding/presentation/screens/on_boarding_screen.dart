@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../core/routes/routes.dart';
+import '../widgets/image_widget.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -31,24 +32,7 @@ class OnBoardingScreen extends StatelessWidget {
                 child: Stack(
                   children: [
                     // AnimatedSwitcher for the image
-                    AnimatedSwitcher(
-                      duration: Duration(milliseconds: 500),
-                      transitionBuilder:
-                          (Widget child, Animation<double> animation) {
-                        return FadeTransition(
-                          opacity: animation,
-                          child: child,
-                        );
-                      },
-                      child: Image.asset(
-                        key: ValueKey<int>(onBoarding
-                            .currentIndex), // Unique key for animation
-                        onBoarding
-                            .onBoardingList[onBoarding.currentIndex].image,
-                        width: double.infinity,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
+                    ImageWidget(onBoarding: onBoarding),
                     Positioned(
                       bottom: 60,
                       left: 20,
