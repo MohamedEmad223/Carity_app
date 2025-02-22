@@ -1,8 +1,8 @@
-import 'package:bloc/bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:charity_app/core/helpers/app_images.dart';
 import 'package:charity_app/core/helpers/app_text.dart';
 import 'package:charity_app/feature/on_Boarding/data/models/on_boarding_model.dart';
-import 'package:meta/meta.dart';
+
 
 part 'on_boarding_state.dart';
 
@@ -34,7 +34,7 @@ class OnBoardingCubit extends Cubit<OnBoardingState> {
   }
 
   void next() {
-    if (currentIndex >=DateTime.march onBoardingList.length - 1) {
+    if (currentIndex >= onBoardingList.length - 1) {
       currentIndex++;
       emit(NextState());
     } else {
