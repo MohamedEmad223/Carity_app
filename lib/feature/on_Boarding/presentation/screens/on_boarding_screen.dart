@@ -57,21 +57,16 @@ class OnBoardingScreen extends StatelessWidget {
                               horizontal: 20, vertical: 30),
                           child: Column(
                             children: [
-                              // AnimatedSwitcher for the title
                               TextOnboardingWidgets(onBoarding: onBoarding),
                               SizedBox(height: 20),
-                              // AnimatedSwitcher for the description
                               DescriptionOnboarding(onBoarding: onBoarding),
                               SizedBox(height: 20),
-                              // Button to navigate to the next content
                               OnBoardingButton(
                                   onPressed: () {
                                     if (onBoarding.currentIndex ==
                                         onBoarding.onBoardingList.length - 1) {
-                                      // Navigate to the next screen
                                       context.read<OnBoardingCubit>().home();
                                     } else {
-                                      // Go to the next content
                                       context.read<OnBoardingCubit>().next();
                                     }
                                   },
@@ -88,7 +83,6 @@ class OnBoardingScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              // SmoothPageIndicator to show progress
               SmoothPageIndicator(
                 controller:
                     PageController(initialPage: onBoarding.currentIndex),
