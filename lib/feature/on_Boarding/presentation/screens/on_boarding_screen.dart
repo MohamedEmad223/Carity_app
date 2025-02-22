@@ -1,6 +1,7 @@
-import 'package:charity_app/core/helpers/app_colors.dart';
+import 'package:charity_app/core/theme/app_colors.dart';
 import 'package:charity_app/core/helpers/app_images.dart';
 import 'package:charity_app/core/helpers/app_text.dart';
+import 'package:charity_app/core/theme/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -45,17 +46,11 @@ class OnBoardingScreen extends StatelessWidget {
                           Text.rich(
                             TextSpan(
                               text: 'Browsing ',
-                              style: TextStyle(
-                                  color: AppColors.secondaryColor,
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.w500),
+                              style: AppTextStyle.poppins25W500secondaryColor,
                               children: <TextSpan>[
                                 TextSpan(
                                   text: 'charities',
-                                  style: TextStyle(
-                                    color: AppColors.primaryColor,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                  style: AppTextStyle.poppins25W500primaryColor,
                                 ),
                               ],
                             ),
@@ -69,9 +64,7 @@ class OnBoardingScreen extends StatelessWidget {
                           Text(
                             AppText.onBoardingtextSubtitleOne,
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 15,
-                            ),
+                            style: AppTextStyle.poppins14W400blackColor,
                           ),
                           SizedBox(height: 20),
                           SizedBox(
