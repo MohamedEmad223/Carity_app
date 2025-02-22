@@ -7,6 +7,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../core/routes/routes.dart';
 import '../widgets/image_widget.dart';
+import '../widgets/text_onboarding_widgets.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -56,38 +57,7 @@ class OnBoardingScreen extends StatelessWidget {
                           child: Column(
                             children: [
                               // AnimatedSwitcher for the title
-                              AnimatedSwitcher(
-                                duration: Duration(milliseconds: 500),
-                                transitionBuilder: (Widget child,
-                                    Animation<double> animation) {
-                                  return FadeTransition(
-                                    opacity: animation,
-                                    child: child,
-                                  );
-                                },
-                                child: Text.rich(
-                                  key: ValueKey<int>(onBoarding
-                                      .currentIndex), // Unique key for animation
-                                  TextSpan(
-                                    text: onBoarding
-                                        .onBoardingList[onBoarding.currentIndex]
-                                        .titleOne,
-                                    style: AppTextStyle
-                                        .poppins25W500secondaryColor,
-                                    children: <TextSpan>[
-                                      TextSpan(
-                                        text: onBoarding
-                                            .onBoardingList[
-                                                onBoarding.currentIndex]
-                                            .titleTwo,
-                                        style: AppTextStyle
-                                            .poppins25W500primaryColor,
-                                      ),
-                                    ],
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
+                              TextOnboardingWidgets(onBoarding: onBoarding),
                               SizedBox(height: 20),
                               // AnimatedSwitcher for the description
                               AnimatedSwitcher(
