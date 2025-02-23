@@ -21,6 +21,7 @@ class AppText {
       'Enter your information to open your account';
   static const String signInTextSignIn = 'Sign In';
   static const String signInTextPassword = 'Password';
+  static const String signUpText = 'Sign Up';
   static const String signInTextForgotPassword = 'Forgot your password ?';
   static const String signUpTextFormFeildEmailSignUp = 'Enter your  e-mail';
   static const String signUpTextFormFeildPasswordSignUp = 'Enter your password';

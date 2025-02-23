@@ -7,6 +7,7 @@ import '../../../../../core/helpers/app_text.dart';
 import '../../../../../core/theme/app_text_style.dart';
 import '../../../../../core/widgets/text_form_feild_widget.dart';
 import '../../../../on_Boarding/presentation/widgets/custom_button_widget.dart';
+import 'do_not_have_email.dart';
 import 'forget_password_widget.dart';
 import 'images_widgets.dart';
 import 'lable_text_form_feild.dart';
@@ -83,7 +84,9 @@ class LoginBodyScreen extends StatelessWidget {
                     socialIcon: SvgPicture.asset(AppImages.appleImage),
                   )
                 ],
-              )
+              ),
+              SizedBox(height: 30),
+              DoNotHaveEmail()
             ],
           ),
         ),
