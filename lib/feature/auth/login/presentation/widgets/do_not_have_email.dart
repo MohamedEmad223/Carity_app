@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/helpers/app_text.dart';
-import '../../../../../core/theme/app_text_style.dart';
 
-class DoNotHaveEmail extends StatelessWidget {
-  const DoNotHaveEmail({super.key});
+
+class CustomDonothaveemail extends StatelessWidget {
+  const CustomDonothaveemail(
+      {super.key,
+      required this.textOne,
+      required this.textTwo,
+      required this.textStyleone,
+      required this.textStyleTwo});
+  final String textOne;
+  final String textTwo;
+
+  final TextStyle textStyleone;
+  final TextStyle textStyleTwo;
 
   @override
   Widget build(BuildContext context) {
@@ -12,15 +21,15 @@ class DoNotHaveEmail extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          AppText.donNotHaveAccount,
-          style: AppTextStyle.poppins14W400blackColor,
+          textOne,
+          style: textStyleone,
         ),
         SizedBox(width: 5),
         GestureDetector(
           onTap: () {},
           child: Text(
-            AppText.signUpText,
-            style: AppTextStyle.poppins12w400primaryColor,
+            textTwo,
+            style: textStyleTwo,
           ),
         )
       ],
