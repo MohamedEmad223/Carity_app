@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 
-class OnBoardingButton extends StatelessWidget {
-  const OnBoardingButton({super.key, required this.onPressed, required this.text});
+class CustomButtonWidget extends StatelessWidget {
+  const CustomButtonWidget({super.key, required this.onPressed, required this.text});
 
 
   final void Function() onPressed;
