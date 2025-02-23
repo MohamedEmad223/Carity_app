@@ -1,8 +1,10 @@
+
 import 'package:flutter/material.dart';
 
 import '../../../../../core/helpers/app_text.dart';
 import '../../../../../core/theme/app_text_style.dart';
 import '../../../../../core/widgets/text_form_feild_widget.dart';
+import 'forget_password_widget.dart';
 import 'images_widgets.dart';
 import 'lable_text_form_feild.dart';
 
@@ -51,6 +53,8 @@ class LoginBodyScreen extends StatelessWidget {
                 hintText: AppText.signUpTextFormFeildPasswordSignUp,
                 textInputType: TextInputType.visiblePassword,
               ),
+              SizedBox(height: 10),
+              ForgetPasswordWidget()
             ],
           ),
         ),
