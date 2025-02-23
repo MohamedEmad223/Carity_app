@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/helpers/app_text.dart';
+import '../../../../../core/routes/routes.dart';
 import '../../../../../core/theme/app_text_style.dart';
 import '../../../../../core/widgets/text_form_feild_widget.dart';
 import '../../../../on_Boarding/presentation/widgets/custom_button_widget.dart';
@@ -59,7 +60,10 @@ class LoginBodyScreen extends StatelessWidget {
                   textInputType: TextInputType.visiblePassword,
                 ),
                 SizedBox(height: 10.h),
-                ForgetPasswordWidget(),
+                ForgetPasswordWidget(
+                  onPressed: () =>
+                      Navigator.pushNamed(context, Routes.signUpScreen),
+                ),
                 SizedBox(height: 25.h),
                 CustomButtonWidget(
                   onPressed: () {},
@@ -75,6 +79,8 @@ class LoginBodyScreen extends StatelessWidget {
                   textTwo: AppText.signInTextEmail,
                   textStyleone: AppTextStyle.poppins14W400blackColor,
                   textStyleTwo: AppTextStyle.poppins12w400primaryColor,
+                  onPressed: () =>
+                      Navigator.pushNamed(context, Routes.signUpScreen),
                 ),
                 SizedBox(height: 25.h),
                 CustomDonothaveemail(

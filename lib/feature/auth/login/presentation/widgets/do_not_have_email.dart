@@ -9,12 +9,14 @@ class CustomDonothaveemail extends StatelessWidget {
       required this.textOne,
       required this.textTwo,
       required this.textStyleone,
-      required this.textStyleTwo});
+      required this.textStyleTwo, this.onPressed});
   final String textOne;
   final String textTwo;
 
   final TextStyle textStyleone;
   final TextStyle textStyleTwo;
+
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class CustomDonothaveemail extends StatelessWidget {
         ),
         SizedBox(width: 5.w),
         GestureDetector(
-          onTap: () {},
+          onTap: onPressed,
           child: Text(
             textTwo,
             style: textStyleTwo,
