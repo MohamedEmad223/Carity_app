@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 
@@ -8,12 +9,14 @@ class CustomDonothaveemail extends StatelessWidget {
       required this.textOne,
       required this.textTwo,
       required this.textStyleone,
-      required this.textStyleTwo});
+      required this.textStyleTwo, this.onPressed});
   final String textOne;
   final String textTwo;
 
   final TextStyle textStyleone;
   final TextStyle textStyleTwo;
+
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +27,9 @@ class CustomDonothaveemail extends StatelessWidget {
           textOne,
           style: textStyleone,
         ),
-        SizedBox(width: 5),
+        SizedBox(width: 5.w),
         GestureDetector(
-          onTap: () {},
+          onTap: onPressed,
           child: Text(
             textTwo,
             style: textStyleTwo,

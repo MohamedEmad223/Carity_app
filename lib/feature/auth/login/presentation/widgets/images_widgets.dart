@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/helpers/app_images.dart';
 
@@ -15,25 +16,25 @@ class ImagesWidgets extends StatelessWidget {
           fit: BoxFit.cover,
         ),
         Positioned(
-          top: 80,
-          left: 40,
+          top: 80.h,
+          left: 40.w,
           child: Image.asset(
             AppImages.blankImage,
           ),
         ),
         Positioned(
-          top: 90,
-          left: 10,
-          right: 10,
+          top: 90.h,
+          left: 10.w,
+          right: 10.w,
           child: Container(
-            height: 200,
+            height: 200.h,
             width: double.infinity,
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(20.w),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20),
-                topRight: Radius.circular(20),
+                topLeft: Radius.circular(20.r),
+                topRight: Radius.circular(20.r),
               ),
             ),
           ),

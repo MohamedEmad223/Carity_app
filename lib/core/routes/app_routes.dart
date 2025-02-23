@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../feature/auth/login/presentation/screens/login_screen.dart';
+import '../../feature/auth/signup/presentation/screens/sign_up_screen.dart';
 import '../../feature/home/presentation/screens/home_screen.dart';
 import '../../feature/on_Boarding/presentation/screens/on_boarding_screen.dart';
 import '../../feature/splash/presentation/screens/splash_screen.dart';
@@ -23,6 +24,8 @@ class AppRoutes {
                 ));
       case Routes.loginScreen:
         return MaterialPageRoute(builder: (_) => LoginScreen());
+      case Routes.signUpScreen:
+        return MaterialPageRoute(builder: (_) => SignUpScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
