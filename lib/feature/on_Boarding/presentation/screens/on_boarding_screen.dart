@@ -19,7 +19,7 @@ class OnBoardingScreen extends StatelessWidget {
       listener: (context, state) {
         if (state is GoHomeState) {
           WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-            Navigator.of(context).pushReplacementNamed(Routes.homeScreen);
+            Navigator.of(context).pushReplacementNamed(Routes.loginScreen);
           });
         }
       },
