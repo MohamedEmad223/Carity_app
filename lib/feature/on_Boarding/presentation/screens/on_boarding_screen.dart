@@ -1,6 +1,6 @@
 import 'package:charity_app/core/theme/app_colors.dart';
 import 'package:charity_app/feature/on_Boarding/logic/cubit/on_boarding_cubit.dart';
-import 'package:charity_app/feature/on_Boarding/presentation/widgets/on_boarding_button.dart';
+import 'package:charity_app/core/widgets/custom_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -61,7 +61,7 @@ class OnBoardingScreen extends StatelessWidget {
                               SizedBox(height: 20),
                               DescriptionOnboarding(onBoarding: onBoarding),
                               SizedBox(height: 20),
-                              OnBoardingButton(
+                              CustomButtonWidget(
                                   onPressed: () {
                                     if (onBoarding.currentIndex ==
                                         onBoarding.onBoardingList.length - 1) {
