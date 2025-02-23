@@ -1,8 +1,5 @@
-import 'package:charity_app/feature/auth/login/presentation/widgets/social_icons_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../../core/helpers/app_images.dart';
 import '../../../../../core/helpers/app_text.dart';
 import '../../../../../core/theme/app_text_style.dart';
 import '../../../../../core/widgets/text_form_feild_widget.dart';
@@ -12,6 +9,7 @@ import 'forget_password_widget.dart';
 import 'images_widgets.dart';
 import 'lable_text_form_feild.dart';
 import 'or_widgets.dart';
+import 'social_icon_row_widget.dart';
 
 class LoginBodyScreen extends StatelessWidget {
   const LoginBodyScreen({super.key});
@@ -68,23 +66,7 @@ class LoginBodyScreen extends StatelessWidget {
               SizedBox(height: 20),
               OrWidgets(),
               SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  SocialIconsWidget(
-                    onPreese: () {},
-                    socialIcon: SvgPicture.asset(AppImages.googleImage),
-                  ),
-                  SocialIconsWidget(
-                    onPreese: () {},
-                    socialIcon: SvgPicture.asset(AppImages.facbookImage),
-                  ),
-                  SocialIconsWidget(
-                    onPreese: () {},
-                    socialIcon: SvgPicture.asset(AppImages.appleImage),
-                  )
-                ],
-              ),
+              SocialIconRowWidget(),
               SizedBox(height: 30),
               DoNotHaveEmail()
             ],
