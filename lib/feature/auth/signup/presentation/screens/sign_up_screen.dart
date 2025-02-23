@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../login/presentation/widgets/images_widgets.dart';
+import '../widgets/sign_up_body_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -8,9 +8,8 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [ImagesWidgets()],
-      ),
+      backgroundColor: Colors.white,
+      body: SignUpBodyScreen(),
     );
   }
 }

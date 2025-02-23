@@ -25,6 +25,8 @@ class AppText {
   static const String signInTextForgotPassword = 'Forgot your password ?';
   static const String signUpTextFormFeildEmailSignUp = 'Enter your  e-mail';
   static const String signUpTextFormFeildPasswordSignUp = 'Enter your password';
+  static const String signUpTextFormFeildConfirmPasswordSignUp =
+      'Enter your Confirm Password';
   static const String donNotHaveAccount = 'Don\'t have an account ?';
   static const String continueText = 'Continue';
   static const String gust = 'a guest';
@@ -46,4 +48,5 @@ class AppText {
   static const String enterConfirmPasswordText = 'Enter your confirm password';
   static const String termAndConditionText = 'Terms & Conditions';
   static const String agreeText = 'I agree to';
+  static const String alreadyHaveAccount = 'Already have an account ?';
 }
