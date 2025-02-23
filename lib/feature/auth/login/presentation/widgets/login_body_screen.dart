@@ -1,9 +1,10 @@
-
 import 'package:flutter/material.dart';
 
 import '../../../../../core/helpers/app_text.dart';
+import '../../../../../core/theme/app_colors.dart';
 import '../../../../../core/theme/app_text_style.dart';
 import '../../../../../core/widgets/text_form_feild_widget.dart';
+import '../../../../on_Boarding/presentation/widgets/custom_button_widget.dart';
 import 'forget_password_widget.dart';
 import 'images_widgets.dart';
 import 'lable_text_form_feild.dart';
@@ -54,7 +55,42 @@ class LoginBodyScreen extends StatelessWidget {
                 textInputType: TextInputType.visiblePassword,
               ),
               SizedBox(height: 10),
-              ForgetPasswordWidget()
+              ForgetPasswordWidget(),
+              SizedBox(height: 25),
+              CustomButtonWidget(
+                onPressed: () {},
+                text: AppText.signInTextSignIn,
+              ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.33,
+                    child: Divider(
+                      height: 25,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    AppText.orText,
+                    style: AppTextStyle.poppins20W400blackColor,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.33,
+                    child: Divider(
+                      height: 25,
+                      color: AppColors.greyColor,
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),

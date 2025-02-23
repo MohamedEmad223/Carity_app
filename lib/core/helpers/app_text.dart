@@ -14,10 +14,12 @@ class AppText {
       'This feature helps users feel more\n confident that their donation has been\n properly received and processed. Users\n will receive a receipt for their donation\n that can be used for tax purposes.';
   static const String onBoardingtextSubtitleThree =
       'Users can see the date, amount and\n charity that was donated.\n This feature can be useful for users who\n want to track their charitable donations\n over time.';
+
+      /// text of login screen
   static const String signInTextEmail = 'Sign In';
   static const String enterYourInformation =
       'Enter your information to open your account';
-  static const String signInTextSignIn = 'E-mail';
+  static const String signInTextSignIn = 'Sign In';
   static const String signInTextPassword = 'Password';
   static const String signInTextForgotPassword = 'Forgot your password ?';
   static const String signUpTextFormFeildEmailSignUp = 'Enter your  e-mail';
@@ -25,5 +27,5 @@ class AppText {
   static const String donNotHaveAccount = 'Don\'t have an account ?';
   static const String continueText = 'Continue';
   static const String gust = 'a guest';
-  
+  static const String orText = 'Or';
 }
