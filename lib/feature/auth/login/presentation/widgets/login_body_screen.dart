@@ -59,6 +59,7 @@ class LoginBodyScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                     ),
                     hintText: AppText.signUpTextFormFeildEmailSignUp,
+                    hintStyle: AppTextStyle.poppins14W400greyColor,
                   ),
                 ),
                 SizedBox(height: 10),
