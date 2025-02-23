@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../login/presentation/widgets/images_widgets.dart';
+
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 
@@ -7,9 +9,7 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-          
-        ],
+        children: [ImagesWidgets()],
       ),
     );
   }
