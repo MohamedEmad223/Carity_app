@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 
@@ -24,7 +25,7 @@ class CustomDonothaveemail extends StatelessWidget {
           textOne,
           style: textStyleone,
         ),
-        SizedBox(width: 5),
+        SizedBox(width: 5.w),
         GestureDetector(
           onTap: () {},
           child: Text(

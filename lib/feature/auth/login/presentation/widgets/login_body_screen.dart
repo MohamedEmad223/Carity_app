@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/helpers/app_text.dart';
 import '../../../../../core/theme/app_text_style.dart';
@@ -25,7 +26,7 @@ class LoginBodyScreen extends StatelessWidget {
             color: Colors.white,
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,48 +35,48 @@ class LoginBodyScreen extends StatelessWidget {
                   AppText.signInTextEmail,
                   style: AppTextStyle.poppins22W400blackColor,
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 10.h),
                 Text(
                   AppText.enterYourInformation,
                   style: AppTextStyle.poppins14W400blackColor,
                 ),
-                SizedBox(height: 25),
+                SizedBox(height: 25.h),
                 LableTextFormFeild(
                   lable: AppText.signInTextEmail,
                 ),
-                SizedBox(height: 5),
+                SizedBox(height: 5.h),
                 TextFormFeildWidget(
                   textInputType: TextInputType.emailAddress,
                   hintText: AppText.signUpTextFormFeildEmailSignUp,
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 10.h),
                 LableTextFormFeild(
                   lable: AppText.signInTextPassword,
                 ),
-                SizedBox(height: 5),
+                SizedBox(height: 5.h),
                 TextFormFeildWidget(
                   hintText: AppText.signUpTextFormFeildPasswordSignUp,
                   textInputType: TextInputType.visiblePassword,
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 10.h),
                 ForgetPasswordWidget(),
-                SizedBox(height: 25),
+                SizedBox(height: 25.h),
                 CustomButtonWidget(
                   onPressed: () {},
                   text: AppText.signInTextSignIn,
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 OrWidgets(),
-                SizedBox(height: 20),
+                SizedBox(height: 20.h),
                 SocialIconRowWidget(),
-                SizedBox(height: 30),
+                SizedBox(height: 30.h),
                 CustomDonothaveemail(
                   textOne: AppText.donNotHaveAccount,
                   textTwo: AppText.signInTextEmail,
                   textStyleone: AppTextStyle.poppins14W400blackColor,
                   textStyleTwo: AppTextStyle.poppins12w400primaryColor,
                 ),
-                SizedBox(height: 25),
+                SizedBox(height: 25.h),
                 CustomDonothaveemail(
                   textOne: AppText.continueText,
                   textTwo: AppText.gust,
