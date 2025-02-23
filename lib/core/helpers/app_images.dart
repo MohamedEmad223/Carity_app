@@ -9,4 +9,6 @@ class AppImages {
       'assets/images/onBoarding/onBoarding_three.png';
   static const String onBoarding1 =
       'assets/images/onBoarding/onBoarding_one.png';
+  static const String loginBackgroundimage = 'assets/images/login/Rectangle 26.png';
+  static const String blankImage = 'assets/images/login/Rectangle 24.png';
 }

@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../../../core/helpers/app_images.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          SvgPicture.asset()
+          Image.asset(
+            AppImages.loginBackgroundimage,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
         ],
       ),
     );
