@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../login/presentation/widgets/images_widgets.dart';
 
 class ForgetPasswordScreen extends StatelessWidget {
   const ForgetPasswordScreen({super.key});
@@ -6,9 +9,13 @@ class ForgetPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Forget Password Screen'),
-      ),
-    );
+        body: Column(
+      children: [
+        ImagesWidgets(),
+        SizedBox(height: 10.h),
+
+        
+      ],
+    ));
   }
 }
