@@ -13,8 +13,6 @@ class ForgetPasswordScreen extends StatelessWidget {
       children: [
         ImagesWidgets(),
         SizedBox(height: 10.h),
-
-        
       ],
     ));
   }
