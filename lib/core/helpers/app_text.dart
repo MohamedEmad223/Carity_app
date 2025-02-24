@@ -49,4 +49,9 @@ class AppText {
   static const String termAndConditionText = 'Terms & Conditions';
   static const String agreeText = 'I agree to';
   static const String alreadyHaveAccount = 'Already have an account ?';
+  /// text of forget password screen
+  static const String forgetPasswordText = 'Forgot your password';
+  static const String enterYourEmailToResetPassword =
+      'Enter your information to recover your account';
+  static const String sendText = 'Send';
 }

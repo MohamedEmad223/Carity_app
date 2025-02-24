@@ -3,6 +3,7 @@ import 'package:charity_app/feature/on_Boarding/logic/cubit/on_boarding_cubit.da
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../feature/auth/forget_password/presentation/screens/forget_password_screen.dart';
 import '../../feature/auth/login/presentation/screens/login_screen.dart';
 import '../../feature/auth/signup/presentation/screens/sign_up_screen.dart';
 import '../../feature/home/presentation/screens/home_screen.dart';
@@ -26,6 +27,8 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => LoginScreen());
       case Routes.signUpScreen:
         return MaterialPageRoute(builder: (_) => SignUpScreen());
+      case Routes.forgetPasswordScreen:
+        return MaterialPageRoute(builder: (_) => ForgetPasswordScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

@@ -62,7 +62,7 @@ class LoginBodyScreen extends StatelessWidget {
                 SizedBox(height: 10.h),
                 ForgetPasswordWidget(
                   onPressed: () =>
-                      Navigator.pushNamed(context, Routes.signUpScreen),
+                      Navigator.pushNamed(context, Routes.forgetPasswordScreen),
                 ),
                 SizedBox(height: 25.h),
                 CustomButtonWidget(
