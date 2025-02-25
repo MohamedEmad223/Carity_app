@@ -54,4 +54,10 @@ class AppText {
   static const String enterYourEmailToResetPassword =
       'Enter your information to recover your account';
   static const String sendText = 'Send';
+
+  /// text of verification screen
+  static const String verificationText = 'Verification';
+  static const String anActivationText = 'An activation code has been sent to you to recover your account';
+  static const String resendCodeText = 'Resend code';
+  static const String verfyText = 'Verify';
 }
