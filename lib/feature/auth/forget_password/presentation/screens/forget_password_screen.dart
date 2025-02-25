@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/helpers/app_text.dart';
+import '../../../../../core/routes/routes.dart';
 import '../../../../../core/theme/app_text_style.dart';
 import '../../../../../core/widgets/custom_button_widget.dart';
 import '../../../../../core/widgets/text_form_feild_widget.dart';
@@ -48,7 +49,9 @@ class ForgetPasswordScreen extends StatelessWidget {
                   SizedBox(height: 25.h),
                   CustomButtonWidget(
                     text: AppText.sendText,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, Routes.verificationScreen);
+                    },
                   ),
                   SizedBox(height: 25.h),
                   CustomDonothaveemail(

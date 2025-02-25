@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../login/presentation/widgets/images_widgets.dart';
 
 class VerficationScreen extends StatelessWidget {
   const VerficationScreen({super.key});
@@ -6,8 +9,14 @@ class VerficationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Verification Screen'),
+      body: Column(
+        children: [
+          ImagesWidgets(),
+          SizedBox(height: 10.h),
+          Column(
+            children: [],
+          )
+        ],
       ),
     );
   }
