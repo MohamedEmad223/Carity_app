@@ -1,7 +1,7 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:charity_app/core/helpers/app_images.dart';
 import 'package:charity_app/core/helpers/app_text.dart';
 import 'package:charity_app/feature/on_Boarding/data/models/on_boarding_model.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'on_boarding_state.dart';
 

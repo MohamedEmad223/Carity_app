@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:charity_app/feature/on_Boarding/logic/cubit/on_boarding_cubit.dart';
 import '../../../../core/theme/app_text_style.dart';
-import '../../logic/cubit/on_boarding_cubit.dart';
 
 class TextOnboardingWidgets extends StatelessWidget {
   const TextOnboardingWidgets({super.key, required this.onBoarding});

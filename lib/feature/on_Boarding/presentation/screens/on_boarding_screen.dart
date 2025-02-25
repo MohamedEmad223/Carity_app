@@ -1,5 +1,5 @@
 import 'package:charity_app/core/theme/app_colors.dart';
-import 'package:charity_app/feature/on_Boarding/logic/cubit/on_boarding_cubit.dart';
+import 'package:charity_app/feature/on_Boarding/logic/cubit/on_boarding_cubit.dart'; // Consistent import
 import 'package:charity_app/core/widgets/custom_button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -33,7 +33,6 @@ class OnBoardingScreen extends StatelessWidget {
               Expanded(
                 child: Stack(
                   children: [
-                    // AnimatedSwitcher for the image
                     ImageWidget(onBoarding: onBoarding),
                     Positioned(
                       bottom: 60,
