@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pinput/pinput.dart';
 
 import '../../../../../core/helpers/app_text.dart';
+import '../../../../../core/routes/routes.dart';
 import '../../../../../core/theme/app_text_style.dart';
 import '../../../../../core/widgets/custom_button_widget.dart';
 import '../../../login/presentation/widgets/images_widgets.dart';
@@ -19,7 +20,7 @@ class VerficationScreen extends StatelessWidget {
           ImagesWidgets(),
           SizedBox(height: 10.h),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+            padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 20.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,7 +57,9 @@ class VerficationScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 10.h),
                 CustomButtonWidget(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, Routes.newPasswordScreen);
+                  },
                   text: AppText.verfyText,
                 )
               ],
