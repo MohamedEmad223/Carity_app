@@ -60,4 +60,10 @@ class AppText {
   static const String anActivationText = 'An activation code has been sent to you to recover your account';
   static const String resendCodeText = 'Resend code';
   static const String verfyText = 'Verify';
+
+  /// text of new password screen
+  static const String newPasswordText = 'New Password';
+  static const String confirmPasswordText = 'Re-New Password';
+  static const String enterYourNewPasswordText = 'Enter your new password, remember it';
+  static const String enterYourConfirmPasswordText = 'Enter the new password here';
 }

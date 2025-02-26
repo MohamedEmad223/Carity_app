@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../login/presentation/widgets/images_widgets.dart';
 
 class NewPasswordScreen extends StatelessWidget {
   const NewPasswordScreen({super.key});
@@ -8,7 +11,15 @@ class NewPasswordScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Text('New password Screen')
+          ImagesWidgets(),
+          SizedBox(height: 10.h),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              
+            ],
+          )
         ],
       ),
     );
