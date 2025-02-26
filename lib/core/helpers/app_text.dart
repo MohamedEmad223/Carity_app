@@ -49,6 +49,7 @@ class AppText {
   static const String termAndConditionText = 'Terms & Conditions';
   static const String agreeText = 'I agree to';
   static const String alreadyHaveAccount = 'Already have an account ?';
+
   /// text of forget password screen
   static const String forgetPasswordText = 'Forgot your password';
   static const String enterYourEmailToResetPassword =
@@ -64,6 +65,7 @@ class AppText {
   /// text of new password screen
   static const String newPasswordText = 'New Password';
   static const String confirmPasswordText = 'Re-New Password';
+  static const String confirmText = 'Confirm';
   static const String enterYourNewPasswordText = 'Enter your new password, remember it';
   static const String enterYourConfirmPasswordText = 'Enter the new password here';
 }
