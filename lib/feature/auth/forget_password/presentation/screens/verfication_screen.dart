@@ -19,7 +19,7 @@ class VerficationScreen extends StatelessWidget {
           ImagesWidgets(),
           SizedBox(height: 10.h),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+            padding:  EdgeInsets.symmetric(vertical: 20.h, horizontal: 20.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
