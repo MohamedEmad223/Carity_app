@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../feature/auth/forget_password/presentation/screens/forget_password_screen.dart';
+import '../../feature/auth/forget_password/presentation/screens/new_password_screen.dart';
 import '../../feature/auth/forget_password/presentation/screens/verfication_screen.dart';
 import '../../feature/auth/login/presentation/screens/login_screen.dart';
 import '../../feature/auth/signup/presentation/screens/sign_up_screen.dart';
@@ -32,6 +33,8 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => ForgetPasswordScreen());
       case Routes.verificationScreen:
         return MaterialPageRoute(builder: (_) => VerficationScreen());
+      case Routes.newPasswordScreen:
+        return MaterialPageRoute(builder: (_) => NewPasswordScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
